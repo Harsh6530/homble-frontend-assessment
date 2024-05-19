@@ -1,0 +1,79 @@
+.product-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Add a light background color for contrast */
+}
+
+.product-details {
+  background: rgba(255, 255, 255, 0.85); /* More transparent background for subtle fade effect */
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  animation:1.5s ease-in;
+  position: absolute; /* Set position to absolute */
+  top: 40%; /* Align to the middle vertically */
+  left: 50%; /* Align to the middle horizontally */
+  transform: translate(-50%, -50%); /* Center the element */
+}
+
+.product-details h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.product-details p {
+  font-size: 1.3em;
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.collapsible {
+  margin-bottom: 15px;
+}
+
+.collapsible button {
+  width: 100%;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  text-align: left;
+  outline: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+}
+
+.collapsible button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+  box-shadow: 0 6px 12px rgba(0, 86, 179, 0.4);
+}
+
+.collapsible .content {
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.collapsible .content.show {
+  display: block;
+  max-height: 1000px; /* Arbitrary large value to allow for smooth expansion */
+  opacity: 1;
+}

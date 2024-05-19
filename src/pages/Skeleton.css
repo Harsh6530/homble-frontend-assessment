@@ -1,0 +1,15 @@
+/* src/components/Skeleton.css */
+
+.skeleton {
+  background-color: rgb(218, 205, 205);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.skeleton-line {
+  height: 20px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,83 @@
+/* src/screens/Home.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background: url('../Assets/bg2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  position: relative; /* Set position to relative */
+}
+
+.home-container {
+  background: rgba(255, 255, 255, 0.85); /* More transparent background for subtle fade effect */
+  padding: 50px 60px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  animation:1.5s ease-in;
+  position: absolute; /* Set position to absolute */
+  top: 40%; /* Align to the middle vertically */
+  left: 50%; /* Align to the middle horizontally */
+  transform: translate(-50%, -50%); /* Center the element */
+}
+
+.home-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.home-subtitle {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.home-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-list-item {
+  margin-bottom: 20px; /* More space between buttons */
+}
+
+.home-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #007bff;
+  padding: 15px 30px;
+  border: 2px solid #007bff;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.home-link:hover {
+  background: #007bff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
